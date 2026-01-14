@@ -32,7 +32,7 @@ Pandas: Para manipulação de dados e interface com o banco de dados CSV.
 
 Pydantic: Para validação de esquemas de dados.
 
-Google Generative AI SDK: Para integração com o Gemini (Moisés).
+Google Generative AI SDK: Para integração com o Gemini.
 
 Requests: Para comunicação entre o Pipeline e a API.
 
