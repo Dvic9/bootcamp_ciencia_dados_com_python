@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 import os
+import ast
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 from typing import List, Optional
@@ -60,13 +61,17 @@ def load_db():
         save_db(df)
         return df
     
+    # Lemos o CSV normalmente
     df = pd.read_csv(DB_FILE)
     if df.empty:
         return pd.DataFrame(columns=['id', 'psn_id', 'name', 'favorite_genre', 'subscription', 'console', 'notifications'])
 
-    cols_to_json = ['subscription', 'console', 'notifications']
-    for col in cols_to_json:
-        df[col] = df[col].apply(lambda x: json.loads(x.replace("'", '"')) if isinstance(x, str) else x)
+    cols_to_parse = ['subscription', 'console', 'notifications']
+    
+    for col in cols_to_parse:
+        # ast.literal_eval é muito mais seguro que json.loads para ler o que o Pandas salva no CSV
+        df[col] = df[col].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) and x.strip() != "" else x)
+        
     return df
 
 def save_db(df):
