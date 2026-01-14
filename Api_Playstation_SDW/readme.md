@@ -52,7 +52,7 @@ Inicie o servidor localmente:
 uvicorn main:app --reload
 
 
-Nota: Se estiver usando a versão em nuvem, a URL configurada no projeto é: https://bootcamp-ciencia-dados-com-python.onrender.com. O objetivo foi gerar uma api para funcionar de acordo com o exemplo do desafio. Clique aqui para consultar a documentação.
+Nota: Se estiver usando a versão em nuvem, a URL configurada no projeto é: https://bootcamp-ciencia-dados-com-python.onrender.com. O objetivo foi gerar uma api para funcionar de acordo com o exemplo do desafio. [Clique aqui para consultar a documentação](https://bootcamp-ciencia-dados-com-python.onrender.com/docs).
 
 3. Execução do Pipeline (ETL)
 
@@ -76,4 +76,4 @@ TRANSFORM: O modelo Gemini analisa o favorite_genre e o plan de assinatura. Ele 
 
 LOAD: O script anexa a nova mensagem à lista de notifications do objeto jogador e realiza um PUT na API para atualizar o banco de dados.
 
-Desenvolvido por: Dvic
+Desenvolvido por: [Dvic](https://github.com/Dvic9)
