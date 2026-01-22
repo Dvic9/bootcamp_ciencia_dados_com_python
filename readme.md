@@ -74,8 +74,8 @@ Personalização: Superação dos requisitos básicos do bootcamp através de te
 
 Conecte-se comigo para conversarmos sobre dados, nuvem e inovação!
 
-GitHub: (Dvic9)[https://github.com/Dvic9/]
+GitHub: [Dvic9](https://github.com/Dvic9/)
 
-LinkedIn: (Jonas Vitor)[https://www.linkedin.com/in/jonas-vitor-silva-santos-2728a2160/]
+LinkedIn: [Jonas Vitor](https://www.linkedin.com/in/jonas-vitor-silva-santos-2728a2160/)
 
 Este repositório é um reflexo do meu compromisso com a excelência técnica e a entrega de valor real para o negócio durante o Santander Bootcamp 2025.
